@@ -1,0 +1,17 @@
+﻿<Window x:Class="demo.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:demo"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="ExcelDataGrid" HorizontalAlignment="Center" Height="401" Margin="0,33,0,0" VerticalAlignment="Top" Width="800" d:ItemsSource="{d:SampleData ItemCount=5}" AutoGenerateColumns="True" SelectionChanged="ExcelDataGrid_SelectionChanged" IsReadOnly="False"/>
+        <Button x:Name="Sav2e" Content="Update Month" HorizontalAlignment="Left" Height="33" Margin="519,0,0,0" VerticalAlignment="Top" Width="154" Click="UpdateMonthButton_Click"/>
+        <TextBox x:Name="MonthTextBox" HorizontalAlignment="Left" Height="28" Margin="88,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="312"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Height="33" Margin="696,0,0,0" VerticalAlignment="Top" Width="94" Click="SaveButton_Click"/>
+
+
+    </Grid>
+</Window>
